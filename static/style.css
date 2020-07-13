@@ -1,0 +1,183 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: none;
+	font-family: sans-serif;
+}
+/*START: HOMEPAGE CSS*/
+nav{
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+nav img{
+	height: 80%;
+	width: 5%;
+	float: left;
+	margin: 0 0 0 3%;
+}
+nav label{
+	width: 30%;
+	line-height: 1.7;
+	margin: 0 0 0 1%;
+}
+nav #college{
+	color: #342B40;
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+
+}
+nav #department{
+	color: #04509B;
+	font-family: "Comic Sans MS", cursive, sans-serif	
+}
+nav ul{
+	list-style-type: none;
+	width: 60%;
+	float: right;
+	text-align: right;
+	margin: 0 2% 0 0;
+}
+nav ul li{
+	display: inline-block;
+	padding: 2%;
+	font-family: monospace;
+	font-size: 1.2em;
+}
+nav ul li:hover{
+	background-color: skyblue;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.active{
+	color: #AB8EFF;
+	font-weight: bold;
+	border-bottom: 5px solid #07499F;
+}
+
+
+#background-div{
+	height: 80vh;
+	width: 100%;
+	background-image: url("img/bg.png");
+	box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+#downloads{
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#background-div p{
+	height: 45%;
+	line-height: 1.4;
+	color: #fff;
+	font-size: 2.4em;
+}
+#background-div span{
+	font-size: 1.5em;
+	color: orangered;
+	font-style: italic;
+}
+#background-div button{
+	height: 10%;
+	background-color: #fff;
+	color: #04509B;
+	border:none;
+	padding: 3% 4%;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 2px;
+	margin: 2% 0 10% 0;
+	transition: transform .2s;
+}
+#background-div button:hover{
+	background-color: yellow;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#bottom-nav{
+	width: 100%;
+	height: 10%;
+	background-color: #1452A5;
+	opacity: 0.8;
+}
+#bottom-nav ul{
+	list-style-type: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#bottom-nav ul li{
+	display: inline-block;
+	width: 20%;
+	color: #fff;
+	transition: transform .2s;
+}
+
+#bottom-nav li:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#about-div{
+	width: 96%;
+	height: 60vh;
+	padding: 0 2%
+}
+#image{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+#about-div img{
+	width: 100%;
+	height: 100%;
+}
+#about{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+#p1{
+	font-weight: bold;
+	font-size: 1.6em;
+	font-family: "Arial",monospace;
+	color: #07499F;
+	padding: 0 0 0 2%;
+}
+#p2,#p3,#p4,#p5{
+	font-family: "Arial",monospace;
+	line-height: 1.4;
+	color: #473E43;
+}
+#p2{
+	padding: 6% 0 0 2%;
+}
+#p3{
+	padding: 3% 0 0 2%;
+}
+#p4{
+	padding: 3% 0 0 2%;
+}
+#p5{
+	padding: 1% 0 0 2%;
+}
+footer{
+	width: 100%;
+	height: 5vh;
+	background-color: red;
+	opacity: 0.7;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*END: HOMEPAGE CSS*/
