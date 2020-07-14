@@ -164,6 +164,9 @@ nav ul li:hover{
 #p3{
 	padding: 3% 0 0 2%;
 }
+#courses{
+	list-style-position: inside;
+}
 #p4{
 	padding: 3% 0 0 2%;
 }

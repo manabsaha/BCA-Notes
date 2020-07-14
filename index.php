@@ -48,8 +48,10 @@
 				<p id="p1">ABOUT THE DEPARTMENT</p>
 				<p id="p2">The Department of Computer Science of J.B. College was formally inaugurated by the Hon'ble Director of Higher Education, Dr H.K. Sahoo, on 19th January 2004.</p>
 				<p id="p3">The department consists of the following courses:</p>
-				<p id="p4">• Three year (six semesters) Bachelors in Computer Applications (BCA).</p>
-				<p id="p5">• One year (two semesters) Post Graduate Diploma in Computer Application (PGDCA).</p>
+				<ul id="courses">
+					<li id="p4">Three year (six semesters) Bachelors in Computer Applications (BCA).</li>
+					<li id="p5">One year (two semesters) Post Graduate Diploma in Computer Application (PGDCA).</li>
+				</ul>
 			</div>
 		</div>
 	</div>
