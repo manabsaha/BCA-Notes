@@ -13,7 +13,7 @@
 			<span id="department">DEPARTMENT OF COMPUTER SCIENCE</span>
 		</label>
 		<ul>
-			<li class="active">HOME</li>
+			<li class="active" onclick="window.location.href='/bca/'">HOME</li>
 			<li>FACULTY</li>
 			<li>RESULTS</li>
 			<li onclick="login_modal();">LOGIN</li>
@@ -42,7 +42,7 @@
 			<div>
 				<p>Looking for&nbsp&nbsp<span>NOTES</span>&nbsp&nbspor<br>
 				<span>QUESTION PAPERS?</span></p><br>
-				<button>OPEN DOWNLOADS</button>
+				<button onclick="window.location.href='archive/downloads.php'">OPEN DOWNLOADS</button>
 			</div>
 		</div>
 		<div id="bottom-nav">

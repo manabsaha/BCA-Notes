@@ -281,3 +281,75 @@ footer{
 	cursor: pointer;
 }
 /*END: MODAL CSS*/
+
+/*START: EXPLORER CSS*/
+#explorer{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#explorer-head{
+	height: 15%;
+	width: 60%;
+	background-color: #7FAFC3;
+	opacity: 0.7;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+#explorer-body{
+	height: 60%;
+	width: 60%;
+	background-color: #E9E9E9;
+	opacity: 0.8;
+}
+#explorer-head img{
+	height: auto;
+	max-width: 8%;
+	padding: 1% 2%;
+	float: left;
+	cursor: pointer;
+}
+#explorer-head #path{
+	float: left;
+	width: 75%;
+	text-align: left;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+#explorer-head #back{
+	float: left;
+	width: 10%;
+	font-size: 1em;
+	text-align: right;
+	color: white;
+	cursor: pointer;
+}
+#explorer-head #back:hover{
+	color: yellow;
+}
+.item{
+	width: 33.33%;
+	height: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 5%;
+}
+.item img{
+	height: 50%;
+	width: auto;
+	cursor: pointer;
+}
+.item p{
+	color: #000 !important;
+	font-size: 1.2em !important;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: "Gagalin",sans-serif;
+	margin-top: 2%;
+}
+/*END: EXPLORER CSS*/
