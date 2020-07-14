@@ -5,6 +5,10 @@
 	background: none;
 	font-family: sans-serif;
 }
+@font-face{
+	font-family: Gagalin;
+	src:("fonts/GAGALIN/Gagalin-Regular.otf");
+}
 /*START: HOMEPAGE CSS*/
 nav{
 	height: 15vh;
@@ -46,6 +50,7 @@ nav ul li{
 	padding: 2%;
 	font-family: monospace;
 	font-size: 1.2em;
+	letter-spacing: 1px;
 }
 nav ul li:hover{
 	background-color: skyblue;
@@ -53,7 +58,7 @@ nav ul li:hover{
 	cursor: pointer;
 }
 .active{
-	color: #AB8EFF;
+	color: #40339F;
 	font-weight: bold;
 	border-bottom: 5px solid #07499F;
 }
@@ -83,7 +88,8 @@ nav ul li:hover{
 #background-div span{
 	font-size: 1.5em;
 	color: orangered;
-	font-style: italic;
+	font-family: "Gagalin",sans-serif;
+	font-weight: 900;
 }
 #background-div button{
 	height: 10%;
@@ -140,8 +146,9 @@ nav ul li:hover{
 	height: 100%;
 }
 #about{
-	width: 50%;
+	width: 48%;
 	height: 100%;
+	padding: 0 0 0 2%;
 	float: left;
 	display: flex;
 	align-items: center;
@@ -184,3 +191,93 @@ footer{
 	justify-content: center;
 }
 /*END: HOMEPAGE CSS*/
+
+/*START: MODAL CSS*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal form{
+	display: flex;
+	justify-content: center;
+}
+.form-group p,.form-group input,.form-group button{
+	margin: 3%;
+	width: 100%;
+}
+.form-group #login_header{
+	font-family: "Gagalin",sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.form-group input{
+	padding: 4% 3%;
+	outline: none;
+	border: none;
+	background-color: #ccc;
+	font-size: 1em;
+}
+.form-group button{
+	padding: 3% 2%;
+	border: none;
+	outline: none;
+	background-color: #1452A5;
+	color: #fff;
+	font-family: "Arial",sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.form-group button:hover{
+	transform: scale(1.1);
+}
+.form-group #reset_pass{
+	font-family: "Arial",sans-serif;
+	font-size: 0.9em;
+	color: #473E43;
+}
+.form-group #reset_pass span{
+	color: #86509B;
+}
+.form-group #reset_pass span:hover{
+	color: blue;
+	cursor: pointer;
+}
+/*END: MODAL CSS*/

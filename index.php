@@ -16,9 +16,26 @@
 			<li class="active">HOME</li>
 			<li>FACULTY</li>
 			<li>RESULTS</li>
-			<li>LOGIN</li>
+			<li onclick="login_modal();">LOGIN</li>
 		</ul>
 	</nav>
+	<!-- Login Div -->
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <form action="" method="post">
+		    	<div class="form-group">
+		    		<p id="login_header">STUDENT LOGIN</p>
+		    		<input type="text" name="email" id="email" placeholder="Email">
+		    		<input type="password" name="password" id="password" placeholder="Password">
+		    		<p id="reset_pass">Forgot Password? <span>RESET</span></p>
+		    		<button>LOGIN</button>
+		    	</div>
+		    </form>
+		  </div>
+		</div>
 	<!-- Background Div -->
 	<div id="background-div">
 		<div id="downloads">
@@ -60,4 +77,19 @@
 		<span>&copy All Rights Reserved 2020</span>
 	</footer>
 </body>
+<script>
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+function login_modal(){
+	modal.style.display = "flex";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </html>
