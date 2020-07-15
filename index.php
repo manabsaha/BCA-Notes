@@ -7,8 +7,8 @@
 <body>
 	<!-- Navbar -->
 	<nav>
-		<img src="static/img/jb.jpg" alt="JBC">
-		<label for="college_department">
+		<img src="static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
+		<label for="college_department" onclick="window.location.href='/bca/'">
 			<span id="college">JAGANNATH BAROOAH COLLEGE</span><br>
 			<span id="department">DEPARTMENT OF COMPUTER SCIENCE</span>
 		</label>
@@ -77,17 +77,20 @@
 			<div style="width: 100%;">
 				<hr style="border: none;height: 1px;background-color: #ccc;"><br>
 				<p id="p1">ADMISSION</p>
-				<p id="p2">
+				<p id="p2" style="width: 50%;float: left;">
 					<b>BCA</b><br>
 					Eligibility: <i>Minimum 45% aggregate in Mathematics (10+2 level)</i><br>
 					Students intake: <i>40</i><br><br>
-					<b>PGDCA</b><br>
-					Eligibility: <br>
-					Students intake: 
 				</p>
-				<br>
+				<p id="p2" style="width: 50%;float: left;">
+					<b>PGDCA</b><br>
+					Eligibility: <i>Undergraduation completed</i><br>
+					Students intake: <i>40</i>
+				</p>
+				<br>				
 			</div>
 			<div style="width: 100%;">
+				<hr style="border: none;height: 1px;background-color: #ccc;"><br>
 				<p id="p1">FACILITIES</p>
 				<p id="p2">About facilities</p>
 				<br><hr style="border: none;height: 1px;background-color: #ccc;"><br>

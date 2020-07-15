@@ -312,11 +312,21 @@ footer{
 	border-left: 1px solid #fff;
 	border-right: 1px solid #fff;
 }
-#explorer-body{
+#explorer-body,#explorer-subjects,#explorer-materials,#explorer-files{
 	height: 60%;
 	width: 60%;
 	background-color: #E9E9E9;
 	opacity: 0.8;
+	overflow: auto;
+}
+#explorer-subjects{
+	display: none;
+}
+#explorer-materials{
+	display: none;
+}
+#explorer-files{
+	display: none;
 }
 #explorer-head img{
 	height: auto;
@@ -363,4 +373,70 @@ footer{
 	font-family: "Gagalin",sans-serif;
 	margin-top: 2%;
 }
+.file{
+	width: 98%;
+	padding: 2% 1% 0 1%;
+}
+.file #filename,.file #filedate,.file #filedownload{
+	float: left;
+	font-size: 1em;
+	text-align: left;
+	font-weight: normal;
+}
+.file #filename{
+	width: 68%;
+	color: #000;
+	font-style: italic;
+	font-size: 1.2em;
+	padding-left: 2%;
+}
+.file #filedate{
+	width: 15%;
+	color: red;
+}
+.file #filedownload{
+	width: 15%;
+	text-align: right;
+	color: #3db1ff;
+	font-weight: bold;
+}
+.file #filedownload:hover{
+	cursor: pointer;
+	color: blue;
+}
+.file hr{
+	margin-top: 4%;
+}
 /*END: EXPLORER CSS*/
+
+/*START: FACULTY CSS*/
+#faculty{
+	width: 90%;
+	margin: 0 5%;
+	background-color: #ccc;
+}
+.teacher{
+	width: 29.33%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	align-items: center;
+	padding: 1%;
+	margin: 1%;
+	float: left;
+	border: 2px solid blue;
+	border-radius: 6px;
+	box-shadow: 5px 5px 5px 5px #888888;
+	color: #000;
+}
+.teacher img{
+	width: 40%;
+	margin: 5%;
+	border: 10px solid white;
+	border-radius: 50%;
+}
+.teacher span{
+	margin: 1% 0;
+	text-align: center;
+}

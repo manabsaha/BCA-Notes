@@ -7,8 +7,8 @@
 <body>
 	<!-- Navbar -->
 	<nav>
-		<img src="static/img/jb.jpg" alt="JBC">
-		<label for="college_department">
+		<img src="static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
+		<label for="college_department" onclick="window.location.href='/bca/'">
 			<span id="college">JAGANNATH BAROOAH COLLEGE</span><br>
 			<span id="department">DEPARTMENT OF COMPUTER SCIENCE</span>
 		</label>
@@ -36,6 +36,36 @@
 		    </form>
 		  </div>
 		</div>
+	<!-- Faculty Div -->
+	<div id="faculty">
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span>Gautam Kumar Adhyapak</span>
+			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span>Gautam Kumar Adhyapak</span>
+			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span>Gautam Kumar Adhyapak</span>
+			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+		</div>
+	</div>
 </body>
 <script>
 var modal = document.getElementById("myModal");

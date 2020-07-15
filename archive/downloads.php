@@ -7,8 +7,8 @@
 <body>
 	<!-- Navbar -->
 	<nav>
-		<img src="../static/img/jblogo.png" alt="JBC">
-		<label for="college_department">
+		<img src="../static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
+		<label for="college_department" onclick="window.location.href='/bca/'">
 			<span id="college">JAGANNATH BAROOAH COLLEGE</span><br>
 			<span id="department">DEPARTMENT OF COMPUTER SCIENCE</span>
 		</label>
@@ -32,34 +32,98 @@
 				<div id="explorer-body">
 					<!-- Export contents here. -->
 					<?php
-						for ($i=0; $i <6 ; $i++) {
-						?> 
-							<div class="item">
-								<img src="../static/img/dir.png" alt="dir">
-								<p>SUBJECT NAME</p>
-							</div>
-						<?php
+						$sem = 5;
+						switch ($sem) {
+							case 1:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
+										<p onclick="loadSubs(1);">SEMESTER 1</p>
+									</div>
+								<?php
+								break;
+
+							case 2:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
+										<p onclick="loadSubs(2);">SEMESTER 2</p>
+									</div>
+								<?php
+								break;
+
+							case 3:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
+										<p onclick="loadSubs(1);">SEMESTER 1</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(3);">
+										<p onclick="loadSubs(3);">SEMESTER 3</p>
+									</div>
+								<?php
+								break;
+
+							case 4:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
+										<p onclick="loadSubs(2);">SEMESTER 2</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(4);">
+										<p onclick="loadSubs(4);">SEMESTER 4</p>
+									</div>
+								<?php
+								break;
+
+							case 5:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
+										<p onclick="loadSubs(1);">SEMESTER 1</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(3);">
+										<p onclick="loadSubs(3);">SEMESTER 3</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(5);">
+										<p onclick="loadSubs(5);">SEMESTER 5</p>
+									</div>
+								<?php
+								break;
+
+							case 6:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
+										<p onclick="loadSubs(2);">SEMESTER 2</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(4);">
+										<p onclick="loadSubs(4);">SEMESTER 4</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(6);">
+										<p onclick="loadSubs(6);">SEMESTER 6</p>
+									</div>
+								<?php
+								break;
+
+							default:
+								break;
 						}
 					?>
 					<!-- End content -->
 				</div>
-		</div>
-	</div>
-	<!-- About Div -->
-	<div id="about-div">
-		<div id="image">
-			<img src="../static/img/about.png" alt="About">
-		</div>
-		<div id="about">
-			<div>
-				<p id="p1">ABOUT THE DEPARTMENT</p>
-				<p id="p2">The Department of Computer Science of J.B. College was formally inaugurated by the Hon'ble Director of Higher Education, Dr H.K. Sahoo, on 19th January 2004.</p>
-				<p id="p3">The department consists of the following courses:</p>
-				<ul id="courses">
-					<li id="p4">Three year (six semesters) Bachelors in Computer Applications (BCA).</li>
-					<li id="p5">One year (two semesters) Post Graduate Diploma in Computer Application (PGDCA).</li>
-				</ul>
-			</div>
+				<div id="explorer-subjects">
+				</div>
+				<div id="explorer-materials">
+				</div>
+				<div id="explorer-files">
+				</div>
 		</div>
 	</div>
 	<!-- Footer -->
@@ -67,4 +131,20 @@
 		<span>&copy All Rights Reserved 2020</span>
 	</footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+	function loadSubs(sem){
+			$.ajax({
+				type: 'GET',
+				url: 'subjects.php',
+				data: {"sem" : sem},
+				success : function(data){
+					$('#explorer-body').hide();
+					$('#explorer-subjects').html(data);
+					$('#explorer-subjects').show();
+				}
+		});
+	}
+</script>
 </html>
