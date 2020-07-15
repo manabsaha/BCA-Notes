@@ -14,7 +14,7 @@
 		</label>
 		<ul>
 			<li class="active" onclick="window.location.href='/bca/'">HOME</li>
-			<li>FACULTY</li>
+			<li onclick="window.location.href='/bca/faculty.php'">FACULTY</li>
 			<li>RESULTS</li>
 			<li onclick="login_modal();">LOGIN</li>
 		</ul>
@@ -69,6 +69,34 @@
 					<li id="p4">Three year (six semesters) Bachelors in Computer Applications (BCA).</li>
 					<li id="p5">One year (two semesters) Post Graduate Diploma in Computer Application (PGDCA).</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="admissions-div">
+		<div id="admissions">
+			<div style="width: 100%;">
+				<hr style="border: none;height: 1px;background-color: #ccc;"><br>
+				<p id="p1">ADMISSION</p>
+				<p id="p2">
+					<b>BCA</b><br>
+					Eligibility: <i>Minimum 45% aggregate in Mathematics (10+2 level)</i><br>
+					Students intake: <i>40</i><br><br>
+					<b>PGDCA</b><br>
+					Eligibility: <br>
+					Students intake: 
+				</p>
+				<br>
+			</div>
+			<div style="width: 100%;">
+				<p id="p1">FACILITIES</p>
+				<p id="p2">About facilities</p>
+				<br><hr style="border: none;height: 1px;background-color: #ccc;"><br>
+			</div>
+			<div style="width: 100%;">
+				<p id="p1">CONTACT</p>
+				<p id="p2"><b>EMAIL:</b> computerscience_dept@jbcollege.org.in<br>
+						<b>Tel:</b> +91 376 2320060</p>
+				<br>
 			</div>
 		</div>
 	</div>

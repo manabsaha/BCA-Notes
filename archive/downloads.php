@@ -14,7 +14,7 @@
 		</label>
 		<ul>
 			<li class="active" onclick="window.location.href='/bca/'">HOME</li>
-			<li>FACULTY</li>
+			<li onclick="window.location.href='/bca/faculty.php'">FACULTY</li>
 			<li>RESULTS</li>
 			<li>LOGOUT</li>
 		</ul>
