@@ -23,8 +23,8 @@
 	<div id="background-div">
 		<div id="explorer">
 				<div id="explorer-head">
-					<img src="../static/img/dir_up.png" alt="up">
-					<h3 id="path">>> HOME / 1ST SEMESTER / NOTES</h3>
+					<img id="up" src="../static/img/dir_up.png" alt="up" onclick="loadUp()">
+					<h3 id="path">>> HOME</h3>
 					<h3 id="back" onclick="window.location.href='/bca/'">BACK</h3>
 					<img src="../static/img/back.png" alt="back" onclick="window.location.href='/bca/'">
 				</div>
@@ -129,9 +129,9 @@
 					?>
 					<!-- End content -->
 				</div>
-				<div id="explorer-subjects">
-				</div>
 				<div id="explorer-materials">
+				</div>
+				<div id="explorer-subjects">
 				</div>
 				<div id="explorer-files">
 				</div>
@@ -154,6 +154,7 @@
 					$('#explorer-body').hide();
 					$('#explorer-materials').html(data);
 					$('#explorer-materials').show();
+					$('#path').text(" >>HOME/ SEMESTER "+sem);
 				}
 		});
 	}

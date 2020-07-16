@@ -1,5 +1,5 @@
 <?php
-	$folder="uploads/";
+	$folder="../upload/uploads/";
 	$dir='../upload';
 	$dir_list=scandir($dir);
 
@@ -10,7 +10,7 @@
 <html>
 <body>
 
-<form action="upload_photo_php.php" method="post" enctype="multipart/form-data">
+<form action="../upload/upload_photo_php.php" method="post" enctype="multipart/form-data">
   Select image to upload:
   <input type="file" name="fileToUpload" id="fileToUpload">
 <br>
