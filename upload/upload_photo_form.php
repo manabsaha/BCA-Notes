@@ -1,6 +1,6 @@
 <?php
 	$folder="uploads/";
-	$dir='/';
+	$dir='../upload';
 	$dir_list=scandir($dir);
 
 ?>
@@ -19,7 +19,7 @@
   	<option style="display: none" disabled selected value>---</option>
   	<?php
   		foreach ($dir_list as $key ) {
-  			if(is_dir($key))
+  			if(is_dir($key) && $key != "." && $key !='..')
   			{
   				?>
   				echo "<option value="<?php echo $key ?>"><?php echo $key ?></option>";
