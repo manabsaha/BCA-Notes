@@ -32,7 +32,7 @@
 				<div id="explorer-body">
 					<!-- Export contents here. -->
 					<?php
-						$sem = 5;
+						$sem = 7;
 						switch ($sem) {
 							case 1:
 								?> 
@@ -104,6 +104,35 @@
 									<div class="item">
 										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(4);">
 										<p onclick="loadMat(4);">SEMESTER 4</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(6);">
+										<p onclick="loadMat(6);">SEMESTER 6</p>
+									</div>
+								<?php
+								break;
+
+							case 7:
+								?> 
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(1);">
+										<p onclick="loadMat(1);">SEMESTER 1</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(2);">
+										<p onclick="loadMat(2);">SEMESTER 2</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(3);">
+										<p onclick="loadMat(3);">SEMESTER 3</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(4);">
+										<p onclick="loadMat(4);">SEMESTER 4</p>
+									</div>
+									<div class="item">
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(5);">
+										<p onclick="loadMat(5);">SEMESTER 5</p>
 									</div>
 									<div class="item">
 										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(6);">

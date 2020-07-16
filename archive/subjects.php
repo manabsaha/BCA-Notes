@@ -22,18 +22,18 @@
 	for ($i=0; $i < count($subjects); $i++) { 
 		?>
 			<div class="item">
-				<img src="../static/img/dir.png" alt="dir" onclick="loadMat('<?php echo $subjects[$i] ?>','<?php echo $y ?>')" name="<?php echo $subjects[$i] ?>">
+				<img src="../static/img/dir.png" alt="dir" onclick="loadMat('<?php echo $subjects[$i] ?>','<?php echo $y ?>','<?php echo $x ?>')" name="<?php echo $subjects[$i] ?>">
 				<p onclick="loadMat('<?php echo $subjects[$i] ?>','<?php echo $y ?>')" name="<?php echo $subjects[$i] ?>"><?php echo $subjects[$i]; ?></p>
 			</div>
 		<?php
 	}
 ?>
 <script>
-	function loadMat(subject,type){
+	function loadMat(subject,type,sem){
 			$.ajax({
 				type: 'GET',
 				url: 'files.php',
-				data: {"subject":subject,"type":type},
+				data: {"subject":subject,"type":type,"sem":sem},
 				success : function(data){
 					$('#explorer-subjects').hide();
 					$('#explorer-body').hide();
