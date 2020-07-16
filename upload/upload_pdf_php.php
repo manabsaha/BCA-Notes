@@ -12,12 +12,14 @@ if (!$conn) {
 else{ 
 	//check if table exists
 	$exists = mysqli_query($conn, "select * from uploads");
-	if($exists==FALSE){
+	if($exists===FALSE){
 		$create_upload= "create table uploads(name varchar(50),
 		disp_name varchar(50),
 		folder varchar(50),
-		semester int)";
+		semester int,
+		upload_date date)";
 		mysqli_query($conn, $create_upload);
+		echo mysqli_error($conn);
 	}
 }
 
@@ -57,7 +59,8 @@ else{
 		}
 		$folder=$_POST['folder'];
 		$semester=intval($_POST['semester']);
-		$sql="INSERT INTO uploads VALUES ('" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."')";
+		$upload_date=date('Y-m-d H:i:s');
+		$sql="INSERT INTO uploads VALUES ('" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."', '" .$upload_date."')";
 
 		if(mysqli_query($conn, $sql)){
 			echo "table updated OK";
