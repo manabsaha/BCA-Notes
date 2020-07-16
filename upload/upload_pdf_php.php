@@ -17,6 +17,7 @@ else{
 		disp_name varchar(50),
 		folder varchar(50),
 		semester int,
+		type varchar(50),
 		upload_date date)";
 		mysqli_query($conn, $create_upload);
 		echo mysqli_error($conn);
@@ -59,11 +60,13 @@ else{
 		}
 		$folder=$_POST['folder'];
 		$semester=intval($_POST['semester']);
+		$type=$_POST['type'];
 		$upload_date=date('Y-m-d H:i:s');
-		$sql="INSERT INTO uploads VALUES ('" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."', '" .$upload_date."')";
+		$sql="INSERT INTO uploads VALUES ('" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."','".$type."', '" .$upload_date."')";
 
 		if(mysqli_query($conn, $sql)){
 			echo "table updated OK";
+			header("Location: /bca/archive/downloads.php");
 		}
 		else{
 			echo "table update error " . mysqli_error($conn);

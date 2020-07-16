@@ -32,7 +32,7 @@
 				<div id="explorer-body">
 					<!-- Export contents here. -->
 					<?php
-						$sem = 7;
+						$sem = 5;
 						switch ($sem) {
 							case 1:
 								?> 
@@ -113,32 +113,14 @@
 								break;
 
 							case 7:
-								?> 
+								for ($i=0; $i < 6; $i++) { 
+									?>
 									<div class="item">
 										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(1);">
-										<p onclick="loadMat(1);">SEMESTER 1</p>
+										<p onclick="loadMat('<?php echo $i+1 ?>');">SEMESTER <?php echo $i+1 ?></p>
 									</div>
-									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(2);">
-										<p onclick="loadMat(2);">SEMESTER 2</p>
-									</div>
-									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(3);">
-										<p onclick="loadMat(3);">SEMESTER 3</p>
-									</div>
-									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(4);">
-										<p onclick="loadMat(4);">SEMESTER 4</p>
-									</div>
-									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(5);">
-										<p onclick="loadMat(5);">SEMESTER 5</p>
-									</div>
-									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(6);">
-										<p onclick="loadMat(6);">SEMESTER 6</p>
-									</div>
-								<?php
+									<?php
+								}
 								break;
 
 							default:

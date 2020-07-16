@@ -407,6 +407,24 @@ footer{
 .file hr{
 	margin-top: 4%;
 }
+.file-upload{
+	width: 98%;
+	padding: 2%;
+}
+.file-upload input[type="text"],.file-upload input[type="file"]{
+	width: 40%;
+	text-align: left;
+	padding: 1%;
+	border: 3px solid white;
+	border-radius: 5px;
+}
+.file-upload input[type="submit"]{
+	width: 18%;
+	background-color: red;
+	padding: 1%;
+	border: 3px solid white;
+	border-radius: 5px;
+}
 /*END: EXPLORER CSS*/
 
 /*START: FACULTY CSS*/
