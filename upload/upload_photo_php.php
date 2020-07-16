@@ -4,6 +4,7 @@ $temp = explode(".", $_FILES["fileToUpload"]["name"]);
 $target_file = $target_dir . '/' . basename(round(microtime(true)) . '.' . end($temp));
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
 if(is_dir($target_dir)){
 	echo("Directory exists\n\n");
 }
