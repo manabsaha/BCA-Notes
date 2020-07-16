@@ -37,8 +37,8 @@
 							case 1:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
-										<p onclick="loadSubs(1);">SEMESTER 1</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(1);">
+										<p onclick="loadMat(1);">SEMESTER 1</p>
 									</div>
 								<?php
 								break;
@@ -46,8 +46,8 @@
 							case 2:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
-										<p onclick="loadSubs(2);">SEMESTER 2</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(2);">
+										<p onclick="loadMat(2);">SEMESTER 2</p>
 									</div>
 								<?php
 								break;
@@ -55,12 +55,12 @@
 							case 3:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
-										<p onclick="loadSubs(1);">SEMESTER 1</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(1);">
+										<p onclick="loadMat(1);">SEMESTER 1</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(3);">
-										<p onclick="loadSubs(3);">SEMESTER 3</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(3);">
+										<p onclick="loadMat(3);">SEMESTER 3</p>
 									</div>
 								<?php
 								break;
@@ -68,12 +68,12 @@
 							case 4:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
-										<p onclick="loadSubs(2);">SEMESTER 2</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(2);">
+										<p onclick="loadMat(2);">SEMESTER 2</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(4);">
-										<p onclick="loadSubs(4);">SEMESTER 4</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(4);">
+										<p onclick="loadMat(4);">SEMESTER 4</p>
 									</div>
 								<?php
 								break;
@@ -81,16 +81,16 @@
 							case 5:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(1);">
-										<p onclick="loadSubs(1);">SEMESTER 1</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(1);">
+										<p onclick="loadMat(1);">SEMESTER 1</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(3);">
-										<p onclick="loadSubs(3);">SEMESTER 3</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(3);">
+										<p onclick="loadMat(3);">SEMESTER 3</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(5);">
-										<p onclick="loadSubs(5);">SEMESTER 5</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(5);">
+										<p onclick="loadMat(5);">SEMESTER 5</p>
 									</div>
 								<?php
 								break;
@@ -98,16 +98,16 @@
 							case 6:
 								?> 
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(2);">
-										<p onclick="loadSubs(2);">SEMESTER 2</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(2);">
+										<p onclick="loadMat(2);">SEMESTER 2</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(4);">
-										<p onclick="loadSubs(4);">SEMESTER 4</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(4);">
+										<p onclick="loadMat(4);">SEMESTER 4</p>
 									</div>
 									<div class="item">
-										<img src="../static/img/dir.png" alt="dir" onclick="loadSubs(6);">
-										<p onclick="loadSubs(6);">SEMESTER 6</p>
+										<img src="../static/img/dir.png" alt="dir" onclick="loadMat(6);">
+										<p onclick="loadMat(6);">SEMESTER 6</p>
 									</div>
 								<?php
 								break;
@@ -134,15 +134,15 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 <script>
-	function loadSubs(sem){
+	function loadMat(sem){
 			$.ajax({
 				type: 'GET',
-				url: 'subjects.php',
+				url: 'materials.php',
 				data: {"sem" : sem},
 				success : function(data){
 					$('#explorer-body').hide();
-					$('#explorer-subjects').html(data);
-					$('#explorer-subjects').show();
+					$('#explorer-materials').html(data);
+					$('#explorer-materials').show();
 				}
 		});
 	}

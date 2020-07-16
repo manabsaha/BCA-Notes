@@ -6,7 +6,10 @@
 	$five = ['Computer Graphics','Operations Research','Internet and WP','Cloud Computing'];
 	$six = ['PROJECT'];
 	$subjects = [];
-	$subjects = $one;
+
+	$x = $_GET['sem'];
+	$y = $_GET['type'];
+
 	switch ($_REQUEST['sem']) {
 	 	case 1: $subjects=$one; break;
 	 	case 2: $subjects=$two; break;
@@ -19,23 +22,24 @@
 	for ($i=0; $i < count($subjects); $i++) { 
 		?>
 			<div class="item">
-				<img src="../static/img/dir.png" alt="dir" onclick="loadMat('<?php echo $subjects[$i] ?>')" name="<?php echo $subjects[$i] ?>">
-				<p onclick="loadMat('<?php echo $subjects[$i] ?>')" name="<?php echo $subjects[$i] ?>"><?php echo $subjects[$i]; ?></p>
+				<img src="../static/img/dir.png" alt="dir" onclick="loadMat('<?php echo $subjects[$i] ?>','<?php echo $y ?>')" name="<?php echo $subjects[$i] ?>">
+				<p onclick="loadMat('<?php echo $subjects[$i] ?>','<?php echo $y ?>')" name="<?php echo $subjects[$i] ?>"><?php echo $subjects[$i]; ?></p>
 			</div>
 		<?php
 	}
 ?>
 <script>
-	function loadMat(subject){
+	function loadMat(subject,type){
 			$.ajax({
 				type: 'GET',
-				url: 'materials.php',
-				data: {"subject":subject},
+				url: 'files.php',
+				data: {"subject":subject,"type":type},
 				success : function(data){
 					$('#explorer-subjects').hide();
 					$('#explorer-body').hide();
-					$('#explorer-materials').html(data);
-					$('#explorer-materials').show();
+					$('#explorer-materials').hide();
+					$('#explorer-files').html(data);
+					$('#explorer-files').show();
 				}
 		});
 	}

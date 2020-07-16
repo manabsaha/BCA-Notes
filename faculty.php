@@ -40,7 +40,7 @@
 	<div id="faculty">
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
-			<span>Gautam Kumar Adhyapak</span>
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
 			<span>(HEAD OF THE DEPARTMENT)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>
@@ -49,7 +49,7 @@
 		</div>
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
-			<span>Gautam Kumar Adhyapak</span>
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
 			<span>(HEAD OF THE DEPARTMENT)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>
@@ -58,7 +58,16 @@
 		</div>
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
-			<span>Gautam Kumar Adhyapak</span>
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
+			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
 			<span>(HEAD OF THE DEPARTMENT)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>

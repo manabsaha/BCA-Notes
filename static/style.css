@@ -411,32 +411,43 @@ footer{
 
 /*START: FACULTY CSS*/
 #faculty{
+	position: relative;
 	width: 90%;
-	margin: 0 5%;
-	background-color: #ccc;
+	margin: 7% 5%;
 }
 .teacher{
-	width: 29.33%;
+	width: 31.33%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
 	align-items: center;
 	padding: 1%;
-	margin: 1%;
+	margin: 1% 1% 10% 1%;
 	float: left;
 	border: 2px solid blue;
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px 5px #888888;
 	color: #000;
+	position: relative;
 }
 .teacher img{
 	width: 40%;
 	margin: 5%;
 	border: 10px solid white;
 	border-radius: 50%;
+	position: absolute;
+	top: -40%;
+	background-color: #fff;
 }
 .teacher span{
 	margin: 1% 0;
 	text-align: center;
+}
+span.fac_name{
+	position: relative;
+	margin-top: 18%;
+	color: #40339F;
+	font-size: 1.3em;
+	font-weight: bold;
 }

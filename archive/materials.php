@@ -1,5 +1,5 @@
 <?php
-	$y = $_GET['subject'];
+	$y = $_GET['sem'];
 	?>
 	<div class="item">
 		<img src="../static/img/dir.png" alt="dir" onclick="loadNotes('<?php echo $y ?>')">
@@ -16,45 +16,42 @@
 	<?php
 ?>
 <script>
-	function loadNotes(subject){
+	function loadNotes(sem){
 		$.ajax({
 				type: 'GET',
-				url: 'files.php',
-				data: {"subject":subject,"type":"notes"},
+				url: 'subjects.php',
+				data: {"sem":sem,"type":"notes"},
 				success : function(data){
 					$('#explorer-body').hide();
-					$('#explorer-subjects').hide();
 					$('#explorer-materials').hide();
-					$('#explorer-files').html(data);
-					$('#explorer-files').show();
+					$('#explorer-subjects').html(data);
+					$('#explorer-subjects').show();
 				}
 		});
 	}
-	function loadSyllabus(subject){
+	function loadSyllabus(sem){
 		$.ajax({
 				type: 'GET',
-				url: 'files.php',
-				data: {"subject":subject,"type":"syllabus"},
+				url: 'subjects.php',
+				data: {"sem":sem,"type":"syllabus"},
 				success : function(data){
 					$('#explorer-body').hide();
-					$('#explorer-subjects').hide();
 					$('#explorer-materials').hide();
-					$('#explorer-files').html(data);
-					$('#explorer-files').show();
+					$('#explorer-subjects').html(data);
+					$('#explorer-subjects').show();
 				}
 		});
 	}
-	function loadPapers(subject){
+	function loadPapers(sem){
 		$.ajax({
 				type: 'GET',
-				url: 'files.php',
-				data: {"subject":subject,"type":"papers"},
+				url: 'subjects.php',
+				data: {"sem":sem,"type":"papers"},
 				success : function(data){
 					$('#explorer-body').hide();
-					$('#explorer-subjects').hide();
 					$('#explorer-materials').hide();
-					$('#explorer-files').html(data);
-					$('#explorer-files').show();
+					$('#explorer-subjects').html(data);
+					$('#explorer-subjects').show();
 				}
 		});
 	}
