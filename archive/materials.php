@@ -26,7 +26,7 @@
 					$('#explorer-materials').hide();
 					$('#explorer-subjects').html(data);
 					$('#explorer-subjects').show();
-					$('#path').text(" >>HOME/ SEMESTER "+sem+" / NOTES");
+					$('#path').text(" >>HOME / SEMESTER "+sem+" / NOTES");
 				}
 		});
 	}
@@ -40,7 +40,7 @@
 					$('#explorer-materials').hide();
 					$('#explorer-subjects').html(data);
 					$('#explorer-subjects').show();
-					$('#path').text(" >>HOME/ SEMESTER "+sem+" / SYLLABUS");
+					$('#path').text(" >>HOME / SEMESTER "+sem+" / SYLLABUS");
 				}
 		});
 	}
@@ -54,7 +54,7 @@
 					$('#explorer-materials').hide();
 					$('#explorer-subjects').html(data);
 					$('#explorer-subjects').show();
-					$('#path').text(" >>HOME/ SEMESTER "+sem+" / PAPERS");
+					$('#path').text(" >>HOME / SEMESTER "+sem+" / PAPERS");
 				}
 		});
 	}

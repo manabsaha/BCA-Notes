@@ -34,8 +34,8 @@ if (file_exists($target_file)) {
 }
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
-  echo "Sorry, your file is too large.";
+if ($_FILES["fileToUpload"]["size"] > 10000000) {
+  echo "Sorry, your file is too large (max:10MB).";
   $uploadOk = 0;
 }
 
@@ -53,6 +53,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    header("Location: /bca/upload/gallery.php");
   } else {
     echo "Sorry, there was an error uploading your file.";
   }

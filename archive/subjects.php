@@ -40,7 +40,7 @@
 					$('#explorer-materials').hide();
 					$('#explorer-files').html(data);
 					$('#explorer-files').show();
-					$('#path').text(" >>HOME/ SEMESTER "+sem+" / "+type.toUpperCase()+" / "+subject.toUpperCase());
+					$('#path').text(" >>HOME / SEMESTER "+sem+" / "+type.toUpperCase()+" / "+subject.toUpperCase());
 				}
 		});
 	}
@@ -48,7 +48,7 @@
 		$('#explorer-subjects').hide();
 		$('#explorer-body').hide();
 		$('#explorer-materials').show();
-		$('#path').text(" >>HOME/ SEMESTER / ");
+		$('#path').text(" >>HOME / SEMESTER / ");
 
 	}
 </script>

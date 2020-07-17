@@ -154,7 +154,7 @@
 					$('#explorer-body').hide();
 					$('#explorer-materials').html(data);
 					$('#explorer-materials').show();
-					$('#path').text(" >>HOME/ SEMESTER "+sem);
+					$('#path').text(" >>HOME / SEMESTER "+sem);
 				}
 		});
 	}

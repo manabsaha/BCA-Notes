@@ -1,10 +1,7 @@
 <?php
-	$folder="../upload/uploads/";
-	$dir='../upload';
+	$dir='photos';
 	$dir_list=scandir($dir);
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -15,14 +12,14 @@
   <input type="file" name="fileToUpload" id="fileToUpload">
 <br>
   Choose Directory:
-  <select type="text" name="folder" value="<?php echo $folder; ?>" required>
+  <select type="text" name="folder" required>
   	<option style="display: none" disabled selected value>---</option>
   	<?php
   		foreach ($dir_list as $key ) {
-  			if(is_dir($key) && $key != "." && $key !='..')
+  			if(is_dir("photos/".$key) && $key != "." && $key !='..')
   			{
   				?>
-  				echo "<option value="<?php echo $key ?>"><?php echo $key ?></option>";
+  				echo "<option value="<?php echo "photos/".$key ?>"><?php echo $key ?></option>";
   			
   				<?php
   			}
