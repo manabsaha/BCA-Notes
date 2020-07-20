@@ -20,32 +20,47 @@
 		</ul>
 	</nav>
 	<!-- Background Div -->
-	<div id="background-div">
-		<div id="explorer">
-				<div id="explorer-head">
-					<img id="up" src="../static/img/dir_up.png" alt="up" onclick="loadUp()">
-					<h3 id="path">GALLERY</h3>
-					<h3 id="back" onclick="window.location.href='/bca/'">BACK</h3>
-					<img src="../static/img/back.png" alt="back" onclick="window.location.href='/bca/'">
-				</div>
-				<!-- LOADING DIV -->
-				<div id="explorer-body">
-					<!-- Export contents here. -->
-					<h3 id="path">FOLDER</h3>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-					<!-- End content -->
-				</div>
+	
+	<div id="gallery-div" style="background-image: url('../static/img/gallerybg.jpg');position: sticky;height: auto;width: 100%;background-repeat: no-repeat;background-size: cover;">
+		<div class="folder" style="padding: 2% 4%;position: relative;">
+			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+			</div>
+		</div>
+		<div class="folder" style="padding: 2% 4%;position: relative;">
+			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+			</div>
+		</div>
+		<div class="folder" style="padding: 2% 4%;position: relative;">
+			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+			</div>
 		</div>
 	</div>
 	<!-- Footer -->

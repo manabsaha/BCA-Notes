@@ -427,11 +427,16 @@ footer{
 }
 /*END: EXPLORER CSS*/
 
+/*START: GALLERY CSS*/
+
+/*END: GALLERY CSS*/
+
 /*START: FACULTY CSS*/
 #faculty{
 	position: relative;
 	width: 90%;
 	margin: 7% 5%;
+	background-image: url('img/facultybg.png');
 }
 .teacher{
 	width: 31.33%;
