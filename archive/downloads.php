@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	if (isset($_SESSION['userid'])){
+		$user = true;
+	}
+	else{
+		$user = false;
+		header("Location: ../index.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +26,7 @@
 			<li class="active" onclick="window.location.href='/bca/'">HOME</li>
 			<li onclick="window.location.href='/bca/faculty.php'">FACULTY</li>
 			<li>RESULTS</li>
-			<li>LOGOUT</li>
+			<li onclick="window.location.href='../logout.php'">LOGOUT</li>
 		</ul>
 	</nav>
 	<!-- Background Div -->

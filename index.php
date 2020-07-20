@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if (isset($_SESSION['userid'])){
+		$user = true;
+	}
+	else{
+		$user = false;
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +25,18 @@
 			<li class="active" onclick="window.location.href='/bca/'">HOME</li>
 			<li onclick="window.location.href='/bca/faculty.php'">FACULTY</li>
 			<li>RESULTS</li>
-			<li onclick="login_modal();">LOGIN</li>
+			<?php
+				if ($user){
+					?>
+					<li onclick="window.location.href='logout.php'">LOGOUT</li>
+					<?php	
+				}
+				else{
+					?>
+					<li onclick="login_modal();">LOGIN</li>
+					<?php
+				}
+			?>
 		</ul>
 	</nav>
 	<!-- Login Div -->
@@ -25,7 +45,7 @@
 		  <!-- Modal content -->
 		  <div class="modal-content">
 		    <span class="close">&times;</span>
-		    <form action="" method="post">
+		    <form action="login.php" method="post">
 		    	<div class="form-group">
 		    		<p id="login_header">STUDENT LOGIN</p>
 		    		<input type="text" name="email" id="email" placeholder="Email">
@@ -42,12 +62,24 @@
 			<div>
 				<p>Looking for&nbsp&nbsp<span>NOTES</span>&nbsp&nbspor<br>
 				<span>QUESTION PAPERS?</span></p><br>
-				<button onclick="window.location.href='archive/downloads.php'">OPEN DOWNLOADS</button>
+				
+				<?php
+				if ($user){
+					?>
+					<button onclick="window.location.href='archive/downloads.php'">OPEN DOWNLOADS</button>
+					<?php	
+				}
+				else{
+					?>
+					<button onclick="login_modal()">OPEN DOWNLOADS</button>
+					<?php
+				}
+			?>
 			</div>
 		</div>
 		<div id="bottom-nav">
 			<ul>
-				<li>PHOTO GALLERY</li>
+				<li onclick="window.location.href='/bca/archive/gallery.php'">PHOTO GALLERY</li>
 				<li>FEEDBACK</li>
 				<li>ADMISSIONS</li>
 				<li>FACILITIES</li>
@@ -90,9 +122,8 @@
 				<br>				
 			</div>
 			<div style="width: 100%;">
-				<hr style="border: none;height: 1px;background-color: #ccc;"><br>
 				<p id="p1">FACILITIES</p>
-				<p id="p2">About facilities</p>
+				<p id="p2">No facilities</p>
 				<br><hr style="border: none;height: 1px;background-color: #ccc;"><br>
 			</div>
 			<div style="width: 100%;">
