@@ -6,26 +6,6 @@ $username = "root";
 $password = "root";
 $dbname = "BCA";
 $conn = mysqli_connect($servername, $username, $password,$dbname);
-if (!$conn) {
-	die("Connection failed: " . mysqli_connect_error());
-}
-else{ 
-	//check if table exists
-	$exists = mysqli_query($conn, "select * from uploads");
-	if($exists===FALSE){
-		$create_upload= "create table uploads(name varchar(50),
-		disp_name varchar(50),
-		folder varchar(50),
-		semester int,
-		type varchar(50),
-		upload_date date)";
-		mysqli_query($conn, $create_upload);
-		echo mysqli_error($conn);
-	}
-}
-
-
-
 $target_dir='uploads/';
 $temp=explode(".", $_FILES["pdf_file"]["name"]);
 $target_file=$target_dir . basename(round(microtime(true)) . "." . end($temp));
@@ -62,7 +42,7 @@ else{
 		$semester=intval($_POST['semester']);
 		$type=$_POST['type'];
 		$upload_date=date('Y-m-d H:i:s');
-		$sql="INSERT INTO uploads VALUES ('" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."','".$type."', '" .$upload_date."')";
+		$sql="INSERT INTO uploads VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$folder."','" .$semester."','".$type."', '" .$upload_date."')";
 
 		if(mysqli_query($conn, $sql)){
 			echo "table updated OK";

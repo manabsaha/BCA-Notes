@@ -5,6 +5,14 @@ $target_file = $target_dir . '/' . basename(round(microtime(true)) . '.' . end($
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
+//MYSQL connection
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "BCA";
+$conn = mysqli_connect($servername, $username, $password,$dbname);
+
+
 if(is_dir($target_dir)){
 	echo("Directory exists\n\n");
 }
@@ -57,5 +65,17 @@ if ($uploadOk == 0) {
   } else {
     echo "Sorry, there was an error uploading your file.";
   }
+  if ($_POST['filename'] === ''){
+      $disp_name=$_FILES["fileToUpload"]["name"];
+    }
+    else{
+      $disp_name=$_POST['filename'] . "." . $file_type;
+    }
+  $tmp=explode("/", $target_dir);
+  $foldername=reset($tmp);
+  $upload_date=date('Y-m-d H:i:s');
+  $user_id=1001;
+  $sql="INSERT INTO photo_gallery VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$folder."','".$upload_date."')";
+  
 }
 ?>

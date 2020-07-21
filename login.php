@@ -14,7 +14,7 @@
 	}
 	else{
 		//Fetch user
-		$sql = "SELECT * FROM bca_users WHERE email = '".$user_email."'";
+		$sql = "SELECT * FROM bca_user WHERE email = '".$user_email."'";
 		$result = mysqli_query($conn, $sql);
 		if (mysqli_num_rows($result) > 0) {
 		  while($user = mysqli_fetch_assoc($result)) {
