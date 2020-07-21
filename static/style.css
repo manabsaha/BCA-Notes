@@ -15,6 +15,7 @@ nav{
 	width: 100%;
 	display: flex;
 	align-items: center;
+	background-color: #fff;
 }
 nav img{
 	height: 80%;
@@ -428,15 +429,35 @@ footer{
 /*END: EXPLORER CSS*/
 
 /*START: GALLERY CSS*/
+#gallery-div{
+	background-image: url('img/gallerybg.jpg');
+	position: sticky;
+	height: auto;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.folder{
+	padding: 2% 4%;
+	position: relative;
+}
+.folder h3{
+	padding: 0 0 1% 0%;
+	color: #fff;
+}
+.thumb{
 
+}
+.thumb img{
+	height: 15%;
+	width: 15%;
+}
 /*END: GALLERY CSS*/
 
 /*START: FACULTY CSS*/
 #faculty{
-	position: relative;
 	width: 90%;
 	margin: 7% 5%;
-	background-image: url('img/facultybg.png');
 }
 .teacher{
 	width: 31.33%;
@@ -448,7 +469,7 @@ footer{
 	padding: 1%;
 	margin: 1% 1% 10% 1%;
 	float: left;
-	border: 2px solid blue;
+	border: 8px solid blue;
 	border-radius: 6px;
 	box-shadow: 5px 5px 5px 5px #888888;
 	color: #000;

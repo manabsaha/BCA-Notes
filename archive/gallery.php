@@ -21,45 +21,45 @@
 	</nav>
 	<!-- Background Div -->
 	
-	<div id="gallery-div" style="background-image: url('../static/img/gallerybg.jpg');position: sticky;height: auto;width: 100%;background-repeat: no-repeat;background-size: cover;">
-		<div class="folder" style="padding: 2% 4%;position: relative;">
-			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+	<div id="gallery-div">
+		<div class="folder">
+			<h3 style="">Folder Name</h3>
 			<div class="thumb">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
 			</div>
 		</div>
-		<div class="folder" style="padding: 2% 4%;position: relative;">
-			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+		<div class="folder">
+			<h3>Folder Name</h3>
 			<div class="thumb">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
 			</div>
 		</div>
-		<div class="folder" style="padding: 2% 4%;position: relative;">
-			<h3 style="padding: 0 0 1% 0%;color: #fff;">Folder Name</h3>
+		<div class="folder">
+			<h3>Folder Name</h3>
 			<div class="thumb">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
-				<img src="../static/img/thumb.jpg" alt="" width="160" height="160" style="padding: 0%;">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
 			</div>
 		</div>
 	</div>
