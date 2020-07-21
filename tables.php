@@ -8,15 +8,15 @@
 		die("Connection failed: " . mysqli_connect_error());
 	}
 	else{
-			$exists = mysqli_query($conn, "select * from bca_user");
+			$exists = mysqli_query($conn, "select * from bca_users");
 			if($exists===FALSE){
-				$create_user="CREATE TABLE bca_user(
+				$create_user="CREATE TABLE bca_users(
 				user_id int auto_increment primary key,
 				user_type varchar(50) default 'user',
 				name varchar(100) NOT NULL,
 				email varchar(255) unique,
 				batch varchar(50),
-				password varchar(50) NOT NULL,
+				password varchar(255) NOT NULL,
 				reset_pass varchar(255) default '')auto_increment=1001";
 				mysqli_query($conn, $create_user);
 				echo mysqli_error($conn);
@@ -32,7 +32,7 @@
 				semester int,
 				type varchar(50),
 				upload_date date,
-				FOREIGN KEY(user_id) REFERENCES bca_user(user_id))";
+				FOREIGN KEY(user_id) REFERENCES bca_users(user_id))";
 				mysqli_query($conn, $create_upload);
 				echo mysqli_error($conn);
 			}
@@ -45,7 +45,7 @@
 				disp_name varchar(50),
 				folder varchar(50),
 				upload_date date,
-				FOREIGN KEY(user_id) REFERENCES bca_user(user_id))";
+				FOREIGN KEY(user_id) REFERENCES bca_users(user_id))";
 				mysqli_query($conn, $create_photo);
 				echo mysqli_error($conn);
 			}

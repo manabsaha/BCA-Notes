@@ -18,7 +18,8 @@
 		$result = mysqli_query($conn, $sql);
 		if (mysqli_num_rows($result) > 0) {
 		  while($user = mysqli_fetch_assoc($result)) {
-		  	if($user_password == $user['password']){
+		  	//if($user_password == $user['password']){
+		  	if(password_verify($user_password, $user['password'])){
 		  		$_SESSION['userid'] = $user['user_id'];
 				header("Location: index.php");
 		  	}
