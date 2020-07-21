@@ -4,7 +4,7 @@
 	<title>BCA</title>
 	<link rel="stylesheet" href="static/style.css">
 </head>
-<body>
+<body style="background-image: url('static/img/facultybg.png');">
 	<!-- Navbar -->
 	<nav>
 		<img src="static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
@@ -37,7 +37,7 @@
 		  </div>
 		</div>
 	<!-- Faculty Div -->
-	<div id="faculty">
+	<div id="faculty" style="background-color: red">
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
 			<span class="fac_name">Gautam Kumar Adhyapak</span>

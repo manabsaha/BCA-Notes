@@ -20,32 +20,47 @@
 		</ul>
 	</nav>
 	<!-- Background Div -->
-	<div id="background-div">
-		<div id="explorer">
-				<div id="explorer-head">
-					<img id="up" src="../static/img/dir_up.png" alt="up" onclick="loadUp()">
-					<h3 id="path">GALLERY</h3>
-					<h3 id="back" onclick="window.location.href='/bca/'">BACK</h3>
-					<img src="../static/img/back.png" alt="back" onclick="window.location.href='/bca/'">
-				</div>
-				<!-- LOADING DIV -->
-				<div id="explorer-body">
-					<!-- Export contents here. -->
-					<h3 id="path">FOLDER</h3>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-						<div class="item">
-							<img src="../static/img/thumb.jpg" alt="dir">
-						</div>
-					<!-- End content -->
-				</div>
+	
+	<div id="gallery-div">
+		<div class="folder">
+			<h3 style="">Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
+		</div>
+		<div class="folder">
+			<h3>Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
+		</div>
+		<div class="folder">
+			<h3>Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
 		</div>
 	</div>
 	<!-- Footer -->
