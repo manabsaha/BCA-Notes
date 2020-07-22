@@ -69,13 +69,13 @@ if ($uploadOk == 0) {
       $disp_name=$_FILES["fileToUpload"]["name"];
     }
     else{
-      $disp_name=$_POST['filename'] . "." . $file_type;
+      $disp_name=$_POST['fileToUpload'] . "." . $imageFiletype;
     }
   $tmp=explode("/", $target_dir);
   $foldername=reset($tmp);
   $upload_date=date('Y-m-d H:i:s');
   $user_id=1001;
-  $sql="INSERT INTO photo_gallery VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$folder."','".$upload_date."')";
+  $sql="INSERT INTO photo_gallery VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$foldername."','".$upload_date."')";
   
 }
 ?>
