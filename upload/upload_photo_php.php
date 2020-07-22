@@ -1,7 +1,8 @@
 <?php
 $target_dir = $_POST['folder'];
 $temp = explode(".", $_FILES["fileToUpload"]["name"]);
-$target_file = $target_dir . '/' . basename(round(microtime(true)) . '.' . end($temp));
+$target_file_name = basename(round(microtime(true)) . '.' . end($temp));
+$target_file = $target_dir . '/' . $target_file_name;
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -70,6 +71,17 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+
+
+    //create thumbnail
+    $src=$target_file;
+    $dest="thumbnails/".$target_file_name;
+    $desired_width="150";
+    make_thumb($src, $dest, $desired_width, $imageFileType);
+
+
+
+
     //header("Location: /bca/upload/gallery.php");
   } else {
     echo "Sorry, there was an error uploading your file.";
@@ -83,4 +95,50 @@ if ($uploadOk == 0) {
   echo mysqli_error($conn);
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function make_thumb($src, $dest, $desired_width, $imageFileType) {
+    if($imageFileType=='png'){
+      $image=imagecreatefrompng($src);
+      imagejpeg($image, $src);
+      imagedestroy($image);
+    }
+    else if($imageFileType=='gif'){
+      $image=imagecreatefromgif($src);
+      imagejpeg($image, $src);
+      imagedestroy($image);
+
+    }
+    /* read the source image */
+    $source_image = imagecreatefromjpeg($src);
+    $width = imagesx($source_image);
+    $height = imagesy($source_image);
+
+    /* find the "desired height" of this thumbnail, relative to the desired width  */
+    $desired_height = floor($height * ($desired_width / $width));
+
+    /* create a new, "virtual" image */
+    $virtual_image = imagecreatetruecolor($desired_width, $desired_height);
+
+    /* copy source image at a resized size */
+    imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
+
+    /* create the physical thumbnail image to its destination */
+    imagejpeg($virtual_image, $dest);
+  }
 ?>
