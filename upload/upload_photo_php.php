@@ -54,6 +54,15 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   $uploadOk = 0;
 }
 
+//check if filename has been altered
+if ($_POST['filename'] === ''){
+      $disp_name=$_FILES["fileToUpload"]["name"];
+    }
+    else{
+      $disp_name=$_POST["filename"]. "." . $imageFileType;
+    }
+
+
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
@@ -65,17 +74,13 @@ if ($uploadOk == 0) {
   } else {
     echo "Sorry, there was an error uploading your file.";
   }
-  if ($_POST['filename'] === ''){
-      $disp_name=$_FILES["fileToUpload"]["name"];
-    }
-    else{
-      $disp_name=$_POST['fileToUpload'] . "." . $imageFiletype;
-    }
   $tmp=explode("/", $target_dir);
   $foldername=reset($tmp);
   $upload_date=date('Y-m-d H:i:s');
   $user_id=1001;
   $sql="INSERT INTO photo_gallery VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$foldername."','".$upload_date."')";
+  mysqli_query($conn, $sql);
+  echo mysqli_error($conn);
   
 }
 ?>

@@ -10,6 +10,8 @@
 <form action="../upload/upload_photo_php.php" method="post" enctype="multipart/form-data">
   Select image to upload:
   <input type="file" name="fileToUpload" id="fileToUpload">
+  Name:
+  <input type="text" name="filename">
 <br>
   Choose Directory:
   <select type="text" name="folder" required>
