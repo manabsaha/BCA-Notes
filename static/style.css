@@ -430,20 +430,13 @@ footer{
 
 /*START: GALLERY CSS*/
 #gallery-div{
-	background-image: url('img/gallerybg.jpg');
-	position: sticky;
-	height: auto;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .folder{
 	padding: 2% 4%;
-	position: relative;
 }
 .folder h3{
 	padding: 0 0 1% 0%;
-	color: #fff;
+	color: #000;
 }
 .thumb{
 
@@ -461,7 +454,7 @@ footer{
 }
 .teacher{
 	width: 31.33%;
-	height: auto;
+	height: 45vh;
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;

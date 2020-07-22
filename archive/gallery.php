@@ -5,8 +5,10 @@
 	<link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+	<div  style="background-image: url('../static/img/gallerybg.jpg');position: fixed;height: 100vh;width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.6);">	
+	</div>
 	<!-- Navbar -->
-	<nav>
+	<nav style="position: relative;">
 		<img src="../static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
 		<label for="college_department" onclick="window.location.href='/bca/'">
 			<span id="college">JAGANNATH BAROOAH COLLEGE</span><br>
@@ -21,7 +23,7 @@
 	</nav>
 	<!-- Background Div -->
 	
-	<div id="gallery-div">
+	<div id="gallery-div" style="position: relative;">
 		<div class="folder">
 			<h3 style="">Folder Name</h3>
 			<div class="thumb">
@@ -47,6 +49,33 @@
 				<img src="../static/img/thumb.jpg">
 				<img src="../static/img/thumb.jpg">
 				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
+		</div>
+		<div class="folder">
+			<h3>Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
+		</div>
+		<div class="folder">
+			<h3>Folder Name</h3>
+			<div class="thumb">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+				<img src="../static/img/thumb.jpg">
+			</div>
+		</div>
+		<div class="folder">
+			<h3>Folder Name</h3>
+			<div class="thumb">
 				<img src="../static/img/thumb.jpg">
 				<img src="../static/img/thumb.jpg">
 				<img src="../static/img/thumb.jpg">

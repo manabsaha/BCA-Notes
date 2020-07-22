@@ -4,9 +4,11 @@
 	<title>BCA</title>
 	<link rel="stylesheet" href="static/style.css">
 </head>
-<body style="background-image: url('static/img/facultybg.png');">
+<body>
+	<div  style="background-image: url('static/img/facultybg.png');position: fixed;height: 100vh;width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow:inset 0 0 0 2000px rgba(64, 68, 241, 0.3);">	
+	</div>
 	<!-- Navbar -->
-	<nav>
+	<nav style="position: relative;">
 		<img src="static/img/jblogo.png" alt="JBC" onclick="window.location.href='/bca/'">
 		<label for="college_department" onclick="window.location.href='/bca/'">
 			<span id="college">JAGANNATH BAROOAH COLLEGE</span><br>
@@ -37,7 +39,7 @@
 		  </div>
 		</div>
 	<!-- Faculty Div -->
-	<div id="faculty" style="background-color: red">
+	<div id="faculty">
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
 			<span class="fac_name">Gautam Kumar Adhyapak</span>
@@ -50,29 +52,65 @@
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
 			<span class="fac_name">Gautam Kumar Adhyapak</span>
-			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>(TEACHER)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>
 			<span>Since 2004</span>
-			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+			<span>Field</span>
 		</div>
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
 			<span class="fac_name">Gautam Kumar Adhyapak</span>
-			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>(TEACHER)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>
 			<span>Since 2004</span>
-			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+			<span>Field</span>
 		</div>
 		<div class="teacher">
 			<img src="static/img/profile.png" alt="">
 			<span class="fac_name">Gautam Kumar Adhyapak</span>
-			<span>(HEAD OF THE DEPARTMENT)</span>
+			<span>(TEACHER)</span>
 			<span>kumaradhyapokgautam@gmail.com</span>
 			<span>+91 9435-092-568</span>
 			<span>Since 2004</span>
-			<span>Data Mining and Warehousing, Advanced Programming Languages</span>
+			<span>Field</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
+			<span>(TEACHER)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Field</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
+			<span>(TEACHER)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Field</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
+			<span>(TEACHER)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Field</span>
+		</div>
+		<div class="teacher">
+			<img src="static/img/profile.png" alt="">
+			<span class="fac_name">Gautam Kumar Adhyapak</span>
+			<span>(TEACHER)</span>
+			<span>kumaradhyapokgautam@gmail.com</span>
+			<span>+91 9435-092-568</span>
+			<span>Since 2004</span>
+			<span>Field</span>
 		</div>
 	</div>
 </body>
