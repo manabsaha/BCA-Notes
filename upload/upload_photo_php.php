@@ -13,6 +13,13 @@ $password = "root";
 $dbname = "BCA";
 $conn = mysqli_connect($servername, $username, $password,$dbname);
 
+if(is_dir("thumbnails")){
+  echo("Thumbnails directory exists\n\n");
+}
+else{
+  echo("Thumbnails directory doesn't exist. Creating new Directory\n\n");
+  mkdir("thumbnails");
+}
 
 if(is_dir($target_dir)){
 	echo("Directory exists\n\n");
