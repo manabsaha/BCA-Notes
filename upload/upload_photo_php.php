@@ -94,7 +94,7 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
   $tmp=explode("/", $target_dir);
-  $foldername=reset($tmp);
+  $foldername=$target_dir;
   $upload_date=date('Y-m-d H:i:s');
   $user_id=1001;
   $sql="INSERT INTO photo_gallery VALUES ('" .$user_id."','" .$target_file."','" .$disp_name."','" .$foldername."','".$upload_date."')";
